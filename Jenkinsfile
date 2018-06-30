@@ -6,5 +6,10 @@ pipeline {
         sh 'gcc -o helloworld helloworld.cpp'
       }
     }
+    stage('ls') {
+      steps {
+        sh 'ls'
+      }
+    }
   }
 }
