@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('build') {
           steps {
-            sh 'gcc -o helloworld helloworld.cpp'
+            sh 'gcc -o helloworld main.cpp'
           }
         }
         stage('ls') {
